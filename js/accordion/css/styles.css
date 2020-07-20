@@ -1,0 +1,21 @@
+:focus {
+    outline: none;
+}
+/* services-list */
+.services-list{
+	width:100%;margin:20px auto 0 auto;
+}
+.services-list li{
+	list-style:none;
+	margin-bottom:4px;
+}
+.services-list h2{
+	cursor:pointer;
+	position:relative;text-align: center;
+}
+
+.services-list h2 span.active{background-position:0 -50px; }
+.services-list h2 a{line-height: 33px;font-size:1.2rem;font-weight:200;}
+.service-content{
+	overflow:hidden;
+}
