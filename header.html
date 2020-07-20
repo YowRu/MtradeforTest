@@ -1,0 +1,60 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png">彰化縣政府勞工處</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="link">
+                <a href="https://www.facebook.com/labor.chcg/" class="nav navbar-right "><img src="assets/img/fb_icon.png"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="new.html">最新消息</a></li>
+                <li><a href="javascript:;" class="one">青年服務 ▼ </a>
+                   <ul class="nav2">
+                       <li><a href="employment.html">就業服務</a></li>
+                       <li><a href="explore.html">職涯探索</a></li>
+                       <li><a href="course.html">青年培力</a></li>
+                       <li><a href="entrepreneurship.html">青年創業</a></li>
+                       <li><a href="careerCenter.html" class="last">青年職涯中心</a></li>
+                   </ul>
+                </li>
+                <li><a href="merchant.html">微青商家</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="bg"></div>
+<script>
+    //bg
+    let $W=$(window).width();
+    let $H=$(window).height();
+    $('.bg').width($W);
+    $('.bg').height($H);
+    $('header .bg').click(function(){
+        $('header .nav.navbar-nav.navbar-right li .one').removeClass('current');
+        $('header .nav.navbar-nav.navbar-right li .nav2').hide();
+        $('header .bg').hide();
+    });
+    //pageNo
+    let pageNo = $('.pageNo').text();
+    $('header .nav.navbar-nav.navbar-right>li').eq(pageNo).addClass('current');
+    //menu
+    $('header .nav.navbar-nav.navbar-right li .one').click(function(){
+        $(this).css({'border-bottom':'3px solid #000'});
+       $(this).siblings('.nav2').fadeIn(500);
+       $(this).parent('header .nav.navbar-nav.navbar-right li').siblings().children('.nav2').hide();
+       $('.bg').show();
+    }); 
+</script>
