@@ -1,0 +1,13 @@
+.content>a {
+    display: block;
+    width: 100%;}
+
+.content img{width:100%;object-fit:contain;}
+    @media(max-width:767px){
+        .content{width:100%;}
+    }
+    @media(max-width:500px){
+        .bannerTitle,
+        #breadcrumbs{display:none;}
+        .content{margin-top: 66px;margin-bottom: 0;}
+    }

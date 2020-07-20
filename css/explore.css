@@ -1,0 +1,37 @@
+ #main .wrap>.row>div a{width:23%;}
+    #main .wrap>.row>div a:last-child{line-height:normal;} 
+    .content.noborder>a{border:none;}
+    #main .wrap>.content{max-width:1140px;width:100%;margin:0 auto;display:flex;justify-content: center;align-items:center;}
+    #main .wrap>.content a{display:block;width:30%;margin:0 auto;padding:15px 5px;cursor:pointer;}
+    #main .wrap>.content a img{height:260px;width:100%;object-fit:cover;}
+    #main .wrap>.content a p{margin: 10px auto;padding-top: 0;}
+    #main .wrap>.content.noborder a p{text-align:center;}
+    #two h2{margin-top:50px;}
+    #main .wrap>.row{margin-top:80px;}
+    .content .info p:nth-child(3):before {
+    content: '聯絡窗口';
+}
+    .content .info p:nth-child(4):before {
+    content: '主辦單位';
+}
+    @media(max-width:930px){
+        #main .wrap>.content{flex-wrap:wrap;flex-direction: column;}
+        #main .wrap>.content a{width:70%;margin:20px auto;}
+        #main .wrap>.content a img{display:block;width:300px;height:auto;margin:0 auto;}
+   
+    }
+    @media(max-width:750px){
+        #main .wrap>.row>div{flex-wrap:wrap;}
+        #main .wrap>.row>div a{width:45%;margin:20px 2%;}
+    }
+    @media(max-width:500px){
+        #main .wrap>.content a img{width:100%;}
+        #main .wrap>.row>div a{width:80%;margin:20px 2%;}
+        #main .wrap>.content a{width:80%;}
+    }
+    @media(max-width:414px){
+        .content>a p{width:90%;}
+    }
+    @media(max-width:400px){
+        #main .wrap>.content a{width: 90%;}
+    }

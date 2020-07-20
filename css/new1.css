@@ -1,0 +1,14 @@
+.title{font-size:2rem;border-bottom:none;color:#444;}
+.container{margin:30px auto 60px;max-width:900px;width:80%;margin:20px auto;}
+.container p{line-height:2rem;font-size:1.5rem;}
+.container .content{display:block;padding:10px 0;}
+.container .content p{line-height:2.5rem;text-indent:2em;box-sizing:border-box;}
+.container .content p:nth-child(1){text-indent:0;}
+.container .content img{display:block;width:80%;margin:20px auto;object-fit: contain;}
+@media(max-width:767px){
+    .container{width:90%;}
+    .content{width:100%;}
+}
+ @media(max-width:400px){
+    .container{width:100%;}
+}

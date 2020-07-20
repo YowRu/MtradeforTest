@@ -1,0 +1,458 @@
+*{margin:0;padding:0;color:#444;}
+a:hover{text-decoration: none;}
+/*header*/
+.navbar-header a {
+	line-height: 60px;
+	font-size: 32px;
+	font-weight:bold; 
+}
+.navbar-header a img{
+	float: left;
+	margin-top:-20px; 
+}
+.link{display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;}
+.link img{
+	margin-top: -30px;
+}
+.navbar-nav{margin: 20px auto;}
+.navbar-nav a{
+	font-size: 18px;
+}
+.navbar-nav > li > a{
+	border-bottom: 3px solid transparent;
+}
+header .nav.navbar-nav.navbar-right>li:first-child{display:none;}
+header .nav.navbar-nav.navbar-right li{position:relative;}
+header .nav.navbar-nav.navbar-right li.current>a{border-bottom:3px solid #222;}
+header .nav.navbar-nav.navbar-right li .nav2{padding-left:10px;
+    position:absolute;left:0;top:52px;height:135px;width:127px;list-style:none;border: 1px solid #bbb;
+    flex-direction: column;background-color:#fff;display:none;z-index: 2;}
+header .nav.navbar-nav.navbar-right li .nav2 li a{color: #444;}
+.navbar-nav > li > a{padding-bottom:5px;padding-left:10px;padding-right:10px;}
+.bg{position:fixed;top:0;left:0;z-index:1;display: none;}
+.pageNo{display:none;}
+/*banner*/
+.banner{
+	margin-top: 170px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+.banner h1{
+	text-align: right;
+	line-height: 115px;
+	font-size: 56px;
+}
+
+/*slider*/
+.slider{
+    max-width:1140px;
+    width:100%;
+    margin:0 auto;
+	margin-top: 170px;
+	margin-bottom: 70px;
+}
+.slider img{width:100%;object-fit:contain;}
+
+.carousel-inner .item a{display:block;}
+.carousel-inner .item a img{height:487px;object-fit:contain;}
+/*分類區*/
+.bannerTitle{color:#fff;background-color:#e55966;max-width:1140px;width:100%;
+    height:100px;line-height:100px;margin:170px auto 0;text-align:center;}
+.main.container{margin-bottom:70px;}
+.main.container .title{font-size:2.5rem;margin:30px auto 50px;text-align: center;}
+.main.container .row{display:flex;justify-content:center;align-items:center;}
+.main.container .row a{display:flex;justify-content:space-around;align-items:flex-end;width:18%;margin:0 1%;border:1px solid #bbb;padding:20px 0;}
+.main.container .row a:nth-child(1){border-left:5px solid #4F7BAA}
+.main.container .row a:nth-child(2){border-left:5px solid #F17472}
+.main.container .row a:nth-child(3){border-left:5px solid #FA975E}
+.main.container .row a:nth-child(4){border-left:5px solid #6DAF93}
+.main.container .row a:nth-child(5){border-left:5px solid #FFD662}
+.main.container .row a:hover{border-left:5px solid #872B89}
+.main.container .row a img{width:60px;margin-right:10px;}
+.main.container .row a p{margin-bottom:0;color:#717171;}
+.main.container .row a:hover p{color:#872B89;}
+.panel-body{
+	margin-left: 80px;
+	margin-bottom:20px; 
+	margin-top:20px;
+}
+.panel img{
+	width: 60px;
+}
+
+.panel a{
+	color: black;
+}
+.panel a :hover{
+	color: orange;
+}
+/*breadcrumbs*/
+#breadcrumbs{max-width:1140px;width:100%;margin:0 auto;margin-bottom:10px;height:50px;background-color:#fff;
+display:flex;align-items: center;justify-content: flex-start;padding-left: 20px;box-sizing: border-box;}
+#breadcrumbs span{padding: 0 3px;color:#676767;}
+/*服務站*/
+.service_station{
+	margin-bottom: 20px;
+}
+.service_station h2{
+	font-size: 20px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.service_station span{
+	background-color: #727071;
+	color: white;
+	padding: 10px 20px 10px 20px; 
+}
+.service_station .row{
+	margin-bottom: 25px;
+}
+/*main*/
+#main{margin-top: 170px;margin-bottom: 70px;} 
+/*footer*/
+.top{
+	right:20px;
+	bottom: 20px;
+	position: fixed;
+	background-color: black;
+	color: white;
+	display: scroll;
+	border-radius: 40px;
+	padding: 8px 10px;
+	z-index: 100;
+	opacity: 0.5;
+}
+footer{
+	background-color: #f3f3f1;
+}
+.footer_logo img{
+	margin-left: 40px; 
+	margin-top: 40px;
+}
+.footer p{
+	margin: 20px 0 20px 0;
+}
+@media(max-width: 1199px) {
+	.link a{
+		margin-right: 5px;
+		margin-top: 10px;
+	}
+	.panel-body{
+		margin-left: 40px;
+	}
+	.service_station span{
+		margin-left: 20px;
+	}
+	.service_station .tel{
+		margin-left: 30px;
+	}
+	.footer_logo img{
+		margin-left: 20px;
+	}
+     .slider ol {
+    margin-bottom: -30px;
+}
+}
+@media(max-width: 1024px) {
+	.link a{
+		margin-right: 5px;
+		margin-top: 10px;
+	}
+	.panel-body{
+		margin-left: 40px;
+	}
+	.service_station span{
+		margin-left: 20px;
+	}
+	.service_station .tel{
+		margin-left: 30px;
+	}
+	.footer_logo img{
+		margin-left: 20px;
+	}
+     .slider ol {
+    margin-bottom: 0;
+}
+    .slider {
+    margin-bottom:20px;
+}
+}
+@media(max-width:1000px){
+    .main.container .row{width:80%;flex-wrap:wrap;justify-content:flex-start;margin:0 auto;padding-left:10%;box-sizing:border-box;}
+    .main.container .row a{width:43%;margin:1%;}
+}
+@media(max-width: 991px) {
+    .main.container .row{width:90%;}
+	.panel-body{
+		margin:0px;
+	}
+	.panel img{
+		clear: both;
+		margin:0px;
+	}
+	.panel p{
+		margin-left: 10px;
+	}
+	.service_station .tel{
+		margin-left: 0px;
+	}
+	.footer_logo img{
+		margin-top: 60px;
+		margin-left: 10px;
+	}
+	.footer_pic img{
+		margin-top: 25px;
+	}
+	.banner{
+		margin-top:200px;
+	}
+}
+@media(max-width: 768px) {
+	.link img{
+		position: absolute;
+		margin-top: -23%;
+		margin-left: -3%;
+	}
+	.slider{
+		margin-top: 220px;
+	}
+	.panel-body{
+		margin:0px;
+	}
+	.panel img{
+		clear: both;
+		margin:0px;
+	}
+	.panel p{
+		margin-left: 10px;
+	}
+	.service_station .tel{
+		margin-left: 0px;
+	}
+	.footer_logo img{
+		margin-top: 60px;
+		margin-left: 10px;
+	}
+	.footer_pic img{
+		margin-top: 25px;
+	}
+	.banner{
+		margin-top:200px;
+	}
+}
+@media(max-width: 767px) {
+    header .nav.navbar-nav.navbar-right li .nav2{position:relative;top:0;left: 15px;width:100%;background-color:#eee;border:none;}
+    #bs-example-navbar-collapse-1{min-height: 80vh;margin: 0;padding: 0;padding-top: 20px;}
+    header .nav.navbar-nav.navbar-right li>a{width: 125px;}
+    .navbar-default .navbar-collapse{padding-top: 23px;}
+    .link{display:block;}
+    header .container{margin-bottom:0;}
+    #main{margin-top:0;}
+    .bannerTitle{margin-top:62px;}
+    .navbar{margin-bottom:0;}
+	.navbar-header a {
+		margin-top: 10px;
+		line-height: 10px;
+		font-size: 14px;
+	}
+	.navbar-header img{
+		width: 50px;
+	}
+	.slider{
+		margin-top: 60px;
+	}
+    .slider ol{bottom:60px;}
+	.link img{
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+	.link img{
+		margin-top: -10px;
+	}
+	.banner{
+		margin-top:50px;
+	}
+	.banner h1{
+		text-align: right;
+		line-height: 120px;
+		font-size: 32px;
+	}
+    .main.container{margin-top: -30px;}
+    .main.container .row{width:95%;}
+	.service_station{
+		text-align:center;
+	}
+	.service_station span{
+		display: block;
+		margin-bottom: 10px;
+		margin-left: 0px;
+	}
+	.footer_logo img{
+		width:10%;
+		margin:20px auto;
+	}
+	.footer_pic img{
+		width:30%;
+		margin:10px auto;
+	}
+	.footer{
+		text-align:center;
+	}
+}
+
+@media(max-width: 550px){
+     .main.container .row a{width:48%;margin:1%;}
+     .main.container .row{width:100%;padding-left:0;}
+   
+}
+@media(max-width: 500px){
+     .main.container .row a{width:60%;margin:10px auto;}
+     .main.container .row{width:90%;justify-content:center;}
+    .main.container .title{margin:40px auto 20px;font-size: 2rem;}
+}
+@media(max-width: 414px) {
+	.navbar-header a {
+		margin-top: 10px;
+		line-height: 10px;
+		font-size: 14px;
+	}
+    .main.container .row a{width:80%;}
+	.navbar-header img{
+		width: 50px;
+	}
+	.link img{
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+	.link img{
+		margin-top: -10px;
+	}
+	.banner{
+		margin-top:50px;
+	}
+	.banner h1{
+		text-align: right;
+		line-height: 120px;
+		font-size: 32px;
+	}
+	.panel-body{
+		margin-left:70px;
+	}
+	.service_station{
+		text-align:center;
+	}
+	.service_station span{
+		display: block;
+		margin-bottom: 10px;
+		margin-left: 0px;
+	}
+	.footer_logo img{
+		width:20%;
+		margin:20px auto;
+	}
+	.footer_pic img{
+		width:50%;
+		margin:10px auto;
+	}
+	.footer{
+		text-align:center;
+	}
+}
+@media(max-width: 320px) {
+    .main.container .row a{width:90%;}
+	.panel-body{
+		margin-left:40px;
+	}
+}
+/*///////////////////////////研習、訓練課程///////////////////////////////////////*/
+/*banner*/
+.training_course{
+	color: white;
+	background-color: #af40cd;
+}
+.classification form{
+	text-align:right;
+	margin-bottom: 20px;
+}
+.content h3{
+	color: #5bb431;
+}
+.content{
+	margin-bottom:90px;
+}
+.content >.row{
+	margin-bottom: 20px;
+}
+.content .right{
+	text-align:right;
+}
+.content ul{
+	list-style-type: none;
+	padding-left: 1.8em;
+}
+@media(max-width: 767px) {
+	.classification form{
+		text-align:left;
+	}
+	.form-group select{
+		margin-bottom: 10px;
+	}
+	.content .right{
+		text-align:left;
+	}
+	.content >.row{
+		margin-bottom: 10px;
+	}
+	.content a{
+		word-wrap: break-word; 
+		word-break: normal;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+  		border-bottom: 0px;
+  		color: orange;
+	}
+}
+@media(max-width: 414px) {
+	.classification form{
+		text-align:left;
+	}
+	.form-group select{
+		margin-bottom: 10px;
+	}
+	.content .right{
+		text-align:left;
+	}
+	.content >.row{
+		margin-bottom: 10px;
+	}
+	.content a{
+		word-wrap: break-word; 
+		word-break: normal;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+  		border-bottom: 0px;
+  		color: orange;
+	}
+}
+/*///////////////////////////外籍勞工服務///////////////////////////////////////*/
+.foreign_worker_service{
+	color: white;
+	background-color: #0f78b2;
+}
+/*///////////////////////////特定對象就業服務///////////////////////////////////////*/
+.special_service{
+	color: white;
+	background-color: #cdc934;
+}
+/*///////////////////////////其他相關活動///////////////////////////////////////*/
+.others{
+	color: white;
+	background-color: #b24723;
+}

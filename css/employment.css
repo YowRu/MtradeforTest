@@ -1,0 +1,52 @@
+.title{color: #4281A4;}
+    .content .info{padding:30px 0;}
+    .content>div .info p{padding:3px 0;}
+    .content .info p:before{background-color:#4281A4;color:#fff;display:inline-block;padding:5px 8px;width:80px;text-align: center;margin-right:10px;}
+    .content .info p:nth-child(1):before{content:'活動時間'}
+    .content .info p:nth-child(2):before{content:'活動地點'}
+    .content .info p:nth-child(3):before{content:'主辦單位'}
+    .content>div:hover{border-bottom:8px solid #4281A4;}
+    .bannerTitle{background-color: #4281A4;}
+    #main .row1{max-width:1140px;width:100%;margin:0 auto;position:relative;display:flex;justify-content: space-between;align-items:center;}
+    #breadcrumbs{max-width:249px;margin-left: 0;padding-left: 0;}
+    .tab{display:flex;justify-content:center;align-items:center;}
+    .tab a{display:block;border:1px solid #ddd;padding:5px 10px;margin:0 5px;}
+    .tab a:hover{background-color:#727272;border:none;}
+    .tab a:hover span{color:#fff;border:none;}
+    #main .wrap>.row{width:100%;background-color:#4281A4;margin:0; }
+    #main .row a h2.text-center{color:#fff;}
+    #main .wrap>.row>div{display:flex;justify-content:center;align-items:center;max-width:1140px;width:100%;margin:20px auto 20px;}
+    #main .wrap>.row>div a{display:block;background-color:#fff;color:#4281A4;width:45%;height:80px;line-height:44px;margin:0 2%;text-align:center;padding:20px 0;}
+#main .wrap>.row>div a:hover{color: #676767;}
+.content>a:hover{border-bottom: 8px solid #4281A4;}
+    @media(max-width:1200px){
+        .content{justify-content: flex-start;flex-wrap:wrap;}
+        .content>div{width:45%;margin:20px 2.5%;}
+    }
+    @media(max-width:838px){
+        .content{justify-content:center;flex-wrap:wrap;width:80%;}
+        .content>div{width:80%;margin:20px auto;}
+    }
+    @media(max-width:550px){
+        .content{width:95%;}
+        #main .wrap>.row>div{flex-direction:column;}
+        #main .wrap>.row>div p{margin:1% auto;width:70%}
+    }
+    @media(max-width:767px){
+        #main .row1{flex-direction: column;}
+        .tab{width: 100%;justify-content: flex-end;}
+    }
+    @media(max-width:455px){
+        .content>div{width:85%;}
+        #main .wrap>.row>div p{width:80%;}
+        .tab{flex-wrap: wrap;}
+        .tab a{margin:5px;}
+    }
+    @media(max-width:414px){
+        .content>div,
+         #main .wrap>.row>div p{width:90%;}
+    }
+    @media(max-width:350px){
+        .content>div p{width:90%;}
+        .content>div{width:100%;}
+    }

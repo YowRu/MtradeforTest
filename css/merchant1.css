@@ -1,0 +1,3 @@
+.bannerTitle{background-color:#FF9B6D;}
+.content>a:hover{border-bottom: 8px solid #FF9B6D;}
+#main .container>img{display:block;width:80%;margin:20px auto;object-fit: contain;}

@@ -1,0 +1,28 @@
+#breadcrumbs{max-width:1140px;} 
+.content{flex-wrap: wrap;justify-content:flex-start;}
+    .content>a{width: 30%;margin:20px 1.5%;}   
+    .content>a p{padding-top:10px;}
+    .content .info p:nth-child(1):before {
+    content: '上課時間';
+}
+    .content .info p:nth-child(2):before {
+    content: '上課內容';
+}
+    .content .info p:nth-child(3):before {
+    content: '參加對象';
+}
+    .content .info{height:240px;}
+    @media(max-width:1080px){
+        .content{width:96%;padding-left: 4%;}
+        .content>a{width: 45%;}
+    }
+    @media(max-width:767px){
+        .content{width:100%;padding-left:0;}
+        .content>a{width:70%;margin: 20px auto;}
+    }
+    @media(max-width:520px){
+        .content>a{width:80%;}
+    }
+    @media(max-width:414px){
+        .content>a{width:90%;}
+    }
